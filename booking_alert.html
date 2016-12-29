@@ -1,0 +1,28 @@
+  <!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Booking Alert</title>     
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+	   </head>
+	<body>
+		<input type=checkbox name="auto" id="auto" value="Auto"/>  //create popover to expalin auto function 
+		
+	
+		<div class="alert alert-success" style="margin-left:350px; max-width:960px; max-height:150px; text-align:center; float:center;">
+			<strong>Your Booking Has Been Successfully Send To Client. Please Wait For Confirmation Email From Client Within 24hour</strong>
+			<br />
+			<div class="button">
+				<button type="button" class="btn btn-success" href="booking_receive.php" style="margin-right: 550px; float:right;">Confirm</button>				<button type="button" class="btn btn-danger" data-dismiss="close" style="margin-left: 550px; float:left;">Cancel</button>
+			</div>
+		</div>
+		<br />
+		<div class="alert alert-danger" style="margin-left:350px; max-width:960px; max-height:150px; text-align:center; float:center;">
+			<strong>You Have Reject Incoming Booking From A Customer</strong>
+		</div>
+	
+		<div class="alert alert-danger" style="margin-left:350px; max-width:960px; max-height:150px; text-align:center; float:center;">
+			<strong>If You Did Not Receive Any Confirmation Email Within 24hour, Your Booking Has Been Reject</strong>
+		</div>
+	</body>
+</html>
