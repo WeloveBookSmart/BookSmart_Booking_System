@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Kindly Fill Your Booking Information</title>
+	
+   <!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
+	  	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+		
+
+		 
+<style>
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+</style>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+		 <script>
+ $(document).ready(function() {
+	 $('.selectpicker').selectpicker();
+ };
+
+ </script>
+	  
+    </head>
+	<body>
+
+<div class="container" style="width:1350px; align:center; margin-left:auto; margin-right:250px;">
+   <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    	<form role="form">
+			<h2>Your Booking Information!<small></small></h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <label>Name</label>:<input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Name" tabindex="1">
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<label>Email</label>:<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="2">
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<label>Phone Number</label>:<input type="text" name="phone_num" id="phone_num" class="form-control input-lg" placeholder="Your Most Used Phone Number" tabindex="3">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group input-daterange">
+					<label>Start Date:</label><input type="text" name="date" id="date" class="form-control input-lg" placeholder="Start Date" tabindex="3">
+				<div class="input-group-addon">to</div>
+					<label>End Date:</label><input type="text" name="date" id="date" class="form-control input-lg" placeholder="End Date" tabindex="3">
+				</div>
+			</div>
+			<div class="form-group">
+					<label>Number Of People:</label><input type="text" name="peoplenum" id="peoplenum" class="form-control input-lg" placeholder="number of people involved in this booking" tabindex="4">
+			</div>
+			<div class="form-group">
+					<label>Price:</label><input type="text" name="price" id="price" class="form-control input-lg" placeholder="total price" tabindex="4">
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3">
+					<span class="button-checkbox">
+					  <button type="button" class="btn" data-color="info" tabindex="7">Payment Method:</button>  
+						<div class="radio"><label><input type="radio" name="credit_card" id="credit_card">Credit Card</label></div>
+						<div class="radio"><label><input type="radio" name="debit_card" id="debit_card">Debit Card</label></div>
+						<div class="radio"><label><input type="radio" name="cash" id="cash">Cash</label></div>
+						<div class="radio"><label><input type="radio" name="paypal" id="paypal">Paypal</label></div>
+						<div class="radio"><label><input type="radio" name="bitcoin" id="credit_card">Credit Card</label></div>
+					</span>
+			    </div>
+				<div class="col-xs-9 col-sm-9 col-md-9">
+					 By clicking <strong class="label label-primary">By choosing non-payment method</strong>, you agree to the<a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> that set out to use <strong>credit card</strong> as default payment method.
+				</div>
+			</div>
+			<div class="form-group">
+					<label>Special Enquiry:</label><input type="text" name="enquiry" id="enquiry" class="form-control input-lg" placeholder="Any special request" tabindex="4">
+			</div>
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-md-6"><input type="submit" id="book" name="book" value="Book Now!" class="btn btn-success btn-block btn-lg" tabindex="7"></div>
+				<div class="col-xs-6 col-md-6"><a href="#" class="btn btn-default btn-block btn-lg">Cancel</a></div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+			</div>
+			<div class="modal-body">
+				<p>By default, you are willing to pay cash and willing to share your information as a guidance for us to ease your problem. This is also includes sharing contacts, recommendation, etc.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+</body>
+	</html>
+	<script>
+    $(document).ready(function(){
+    $('.input-daterange input').each(function() {
+    $(this).datepicker('clearDates');
+});
+    })
+</script>
